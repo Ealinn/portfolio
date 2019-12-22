@@ -3,6 +3,7 @@ $(function () {
     let contactsList = [];
     const $contacts = $('.contacts');
 
+
     if (localStorage.contacts) {
         contactsList = JSON.parse(localStorage.contacts);
 
