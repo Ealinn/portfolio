@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="contacts-book">
+        <div class="create-wrapper">
+            <button type="button" id="add-new-contact">Add new contact</button>
+            <form action="" id="create-new-contact">
+                <input type="file" accept="image/*" id="upload-file">
+                <input type="text" id="create-name" placeholder="Enter a name">
+                <input type="tel" pattern="^\+?\d+-?$" class="create-tel" placeholder="Enter the phone number">
+                <button type="button" id="add-more-tel">Add a phone number</button>
+                <input type="email" id="create-email" placeholder="Enter the e-mail">
+                <p>Choose the birth date:</p> 
+                <input type="date" id="create-bdate">
+
+                <button type="button" id="create-contact">Create contact</button>
+
+                <button type="reset" id="clear-form">Clear this form</button> 
+            </form>
+        </div>
+        <div class="contacts-wrapper">
+            <input type="text" id="search-input" placeholder="Search...">
+            <ul class="contacts"></ul>
+            
+            <div class="edit-form-wrapper">
+                <form action="" id="edit-form">
+                    <input type="text" id="edit-name">
+                    <input type="text" id="edit-tel">
+                    <input type="text" id="edit-email">
+                    <input type="text" id="edit-bdate">
+                    <div class="buttons">
+                        <button type="button" id="edit-yes">Ok</button>
+                        <button type="button" id="edit-no">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="show-birthdays">
+        <button class="close" type="button">X</button>
+        <h3>Today is the birthday of:</h3>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
