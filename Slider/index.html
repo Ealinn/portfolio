@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-36</title>
+    <style>
+        .gal-wrapper {
+            border: 2px solid black;
+            width: 700px;
+            height: 500px;
+            margin: 70px auto;
+            position: relative;
+        }
+        .gal-wrapper .hide-slide {
+            opacity: 0;
+        }
+        .gal-wrapper img {
+            width: 700px;
+            height: 500px;
+            position: absolute;
+            opacity: 1;
+            transition: all ease 1s;
+        }
+        .btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.8em;
+            z-index: 1;
+            outline: none;
+            cursor: pointer;  
+            opacity: 0;
+            transition: all ease 1s;
+        }
+        .gal-wrapper:hover .btn.next, 
+        .gal-wrapper:hover .btn.prev {
+            opacity: 0.6;
+        }
+        .btn.prev {
+            left: 5px;
+        }
+        .btn.next {
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gal-wrapper">
+        <button class="btn prev"><</button>
+        <button class="btn next">></button>
+        <img src="imgs/1.jpg">
+        <img src="imgs/2.jpg">
+        <img src="imgs/3.jpg">
+        <img src="imgs/4.jpg">
+        <img src="imgs/5.jpg">
+    </div>
+
+    <script>
+        const $imgs = document.querySelectorAll('.gal-wrapper img');
+        let currentImage = $imgs.length - 1;
+
+        const slider = (images, currentImage) => {
+            images.forEach(el => {
+                return el.classList.add('hide-slide');
+            });
+            images[currentImage].classList.remove('hide-slide');
+        } 
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            if (!currentImage) {
+                currentImage = $imgs.length - 1;
+            } else {
+                currentImage--;
+            }
+            slider($imgs, currentImage);
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            if (currentImage + 1 === $imgs.length) {
+                currentImage = 0;
+            } else {
+                currentImage++;
+            }
+            slider($imgs, currentImage);
+        });
+    </script>
+</body>
+</html>
