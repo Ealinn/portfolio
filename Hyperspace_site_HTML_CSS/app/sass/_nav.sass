@@ -1,0 +1,33 @@
+.main-menu
+    width: 75%
+    color: $color-main
+    text-transform: uppercase
+    font-size: 0.7em
+    letter-spacing: $letter-spacing
+    font-weight: bold
+    &-item 
+        width: 100%
+        border-bottom: 2px solid $border-color
+        position: relative
+        margin-top: 30px
+        a
+            display: block
+            text-align: right
+            padding: 20px 0px 15px 0px
+        &:after
+            content: ''
+            position: absolute
+            right: 0px
+            bottom: 0px
+            width: 100%
+            height: 3px
+            background: linear-gradient(to right, #5e42a6, #b74e91)
+            opacity: 0
+        &:hover:after
+            opacity: 1
+        &:hover
+            color: $color-title
+            cursor: pointer
+            border-bottom: none
+    &-item:first-child
+        margin-top: 0px

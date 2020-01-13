@@ -1,0 +1,100 @@
+.contacts-block
+    +flex(column, flex-start, flex-start)
+    width: $width-full
+    padding: 60px 50px
+    background-color: #5e42a6
+    h2 
+        margin: $margin-none
+        color: $color-title
+        font-size: $font-size-h2
+    h3 
+        margin: $margin-none
+        color: $color-title
+        font-size: $font-size-h3
+    p 
+        margin: 25px 0px
+        color: $color-main
+        width: 95%
+        line-height: $line-height
+        font-size: $font-size-p
+    .contacts-info
+        +flex(row, space-between, flex-start)
+        margin-top: 20px
+        width: $width-full
+        &-message
+            width: 60%
+            &-form
+                +flex(row, space-between, flex-start)
+                flex-wrap: wrap
+                .input-label
+                    width: 48%
+                    color: $color-title
+                    font-size: $font-size-h3
+                    font-weight: bold
+                #name, #email
+                    margin-top: 15px
+                    padding: 10px 20px
+                    background-color: #664cab
+                    border: 1px solid $border-color
+                    border-radius: 5px
+                    font-size: $font-size-input
+                    color: $color-title
+                    outline: none
+                    width: $width-full
+                    &:focus
+                        border: 2px solid $color-title
+                .message
+                    margin-top: 30px
+                    color: $color-title
+                    font-size: $font-size-h3
+                    font-weight: bold
+                #message-area
+                    margin-top: 15px
+                    margin-bottom: 30px
+                    padding: 10px 20px
+                    background-color: #664cab
+                    border: 1px solid $border-color
+                    border-radius: 5px
+                    font-size: $font-size-input
+                    color: $color-title
+                    outline: none
+                    width: $width-full
+                    min-height: 170px
+                    &:focus
+                        border: 2px solid $color-title
+        &-address
+            width: 35%
+            border-left: 1px solid $border-color
+            padding-left: 30px
+            padding-bottom: 40px
+            p 
+                margin: 15px 0px
+                color: $color-main
+                width: 95%
+                line-height: 1.3
+                font-size: $font-size-p
+                a 
+                    color: inherit
+                    display: inline-block
+                    border-bottom: 2px dotted $color-main
+                    line-height: 1.2em
+                    cursor: pointer
+                    &:hover
+                        border-bottom: none
+                        color: $color-title
+            h3 
+                margin-top: 25px
+                &:first-child
+                    margin: $margin-none
+            .social-icon-list
+                +flex(row, flex-start, flex-start)
+                margin-top: 15px
+                color: $color-main
+                &-item
+                    display: inline-block 
+                    margin-right: 15px
+                    & a 
+                        color: inherit
+                    .fab 
+                        font-size: 1.15em
+            

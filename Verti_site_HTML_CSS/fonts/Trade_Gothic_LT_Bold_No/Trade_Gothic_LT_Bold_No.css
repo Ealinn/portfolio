@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Trade_Gothic_LT_Bold_No';
+    src: url('fonts/Trade_Gothic_LT_Bold_No.eot');
+    src: url('fonts/Trade_Gothic_LT_Bold_No.eot') format('embedded-opentype'),
+         url('fonts/Trade_Gothic_LT_Bold_No.woff2') format('woff2'),
+         url('fonts/Trade_Gothic_LT_Bold_No.woff') format('woff'),
+         url('fonts/Trade_Gothic_LT_Bold_No.ttf') format('truetype'),
+         url('fonts/Trade_Gothic_LT_Bold_No.svg#Trade_Gothic_LT_Bold_No') format('svg');
+}

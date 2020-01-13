@@ -1,0 +1,42 @@
+.info-block-first
+    +flex(column, flex-start, stretch)
+    width: 100%
+    &-section 
+        +flex(row, flex-start, flex-start)
+        // background-color: #5052b5
+        .section-picture
+            // background-image: url(../image/pic01.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            background-origin: border-box
+            background-position: center
+            height: 400px
+            width: 55%
+        .first-picture
+            background-image: url(../image/pic01.jpg)
+        .second-picture
+            background-image: url(../image/pic02.jpg)  
+        .third-picture
+            background-image: url(../image/pic03.jpg)
+        .section-text
+            +flex(column, center, flex-start)
+            height: 400px
+            padding-left: 50px
+            padding-right: 100px
+            h2 
+                margin: 0px
+                color: $color-title
+                font-size: $font-size-h2
+            p 
+                margin-top: 20px
+                margin-bottom: 65px
+                color: $color-main
+                width: 95%
+                line-height: $line-height
+                font-size: $font-size-p
+    .section-background-first
+        background-color: #5052b5
+    .section-background-second
+        background-color: #4c4eac
+    .section-background-third
+        background-color: #484aa3

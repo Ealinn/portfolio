@@ -1,0 +1,74 @@
+.info-block-second
+    +flex(column, flex-start, flex-start)
+    width: $width-full
+    padding: 60px 50px
+    background-color: #b74e91
+    h2 
+        margin: $margin-none
+        color: $color-title
+        font-size: $font-size-h2
+    p 
+        margin: 25px 0px
+        color: $color-main
+        width: 95%
+        line-height: $line-height
+        font-size: $font-size-p
+    .features
+        +flex(row, flex-start, flex-start)
+        flex-wrap: wrap
+        border-radius: 5px
+        border: 1px solid $border-color
+        background-color: #bb5797
+        margin-bottom: 40px
+        width: $width-full
+        &-section
+            width: 50%
+            padding: 50px 50px 50px 110px
+            border: 1px solid $border-color
+            position: relative
+            .icon
+                position: absolute
+                left: 55px
+                top: 45px
+                width: 40px
+                height: 40px
+                display: block
+                background: $color-title                
+                border-radius: 100%
+                text-align: center
+                color: #bb5797
+                font-size: 1.2em
+                &:before
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+            .fa-code:before
+                content: "\f121"
+                font-family: $fa-family
+            .fa-lock:before
+                content: "\f023"
+                font-family: $fa-family
+            .fa-cog:before
+                content: "\f013"
+                font-family: $fa-family
+            .fa-desktop:before
+                content: "\f108"
+                font-family: $fa-family
+            .fa-link:before
+                content: "\f0c1"
+                font-family: $fa-family
+            .fa-gem:before
+                content: "\f3a5"
+                font-family: $fa-family
+            h3 
+                margin: $margin-none
+                color: $color-title
+                font-size: $font-size-h3
+            p 
+                margin: $margin-none
+                margin-top: 15px
+                color: $color-main
+                width: 95%
+                line-height: $line-height
+                font-size: $font-size-p

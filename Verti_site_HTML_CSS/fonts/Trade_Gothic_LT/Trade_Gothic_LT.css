@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Trade_Gothic_LT';
+    src: url('fonts/Trade_Gothic_LT.eot');
+    src: url('fonts/Trade_Gothic_LT.eot') format('embedded-opentype'),
+         url('fonts/Trade_Gothic_LT.woff2') format('woff2'),
+         url('fonts/Trade_Gothic_LT.woff') format('woff'),
+         url('fonts/Trade_Gothic_LT.ttf') format('truetype'),
+         url('fonts/Trade_Gothic_LT.svg#Trade_Gothic_LT') format('svg');
+}

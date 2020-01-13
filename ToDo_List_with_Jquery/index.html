@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .todo-list {
+            list-style-type: none;
+            margin: 10px 0px;
+            padding: 0;
+            width: 400px;
+        }
+        li {
+            margin-bottom: 10px;
+            border: 1px solid #008B8B;
+            background-color: #66CDAA;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #new-todo {
+            outline: none;
+            border: 1px solid #008B8B;
+            border-radius: 5px;
+            width: 400px;
+            height: 30px;
+        }
+        .done-item {
+            text-decoration-line: line-through;
+            opacity: 0.6;
+        }
+        button {
+            outline: none;
+            border: 1px solid #008B8B;
+            border-radius: 3px;
+            background-color: #66CDAA;
+            cursor: pointer;
+        }
+        #todo-add-button, 
+        #show-hide-button {
+            height: 30px;
+        }
+        .todo-list li .buttons {
+            float: right;
+        }
+        .hide-done .done-item {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <input id="new-todo" type="text" placeholder="enter your todo">
+        <button id="todo-add-button" type="button">add</button>
+        <button id="show-hide-button" type="button">show/hide</button>
+    
+        <ul class="todo-list">
+ 
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            const $showHide = $('#show-hide-button');
+
+            $showHide.click(() => {
+                $list.toggleClass('hide-done');
+            });
+
+            const $add = $('#todo-add-button');
+            const $input = $('#new-todo');
+            const $list = $('.todo-list');
+
+            $add.click(() => {
+                const $li = $(`<li>
+                        ${$input.val()}
+                        <div class="buttons">
+                            <button class="done">done</button>
+                            <button class="delete">delete</button>
+                        </div>
+                    </li>`);
+                $input.val('');
+                $list.append($li);
+            })
+
+            $('.todo-list').on('click', '.done', function () {
+                $(this)
+                    .closest('li')
+                    .toggleClass('done-item');
+            });
+                
+            $('.todo-list').on('click', '.delete', function () {
+                $(this)
+                    .closest('li')
+                    .remove();
+            });
+
+        </script>
+</body>
+</html>

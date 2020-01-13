@@ -1,0 +1,16 @@
+@media only screen and (max-width : 992px)
+    .main-menu-wrapper
+        +flex(row, center, center)
+        width: 100%
+        height: auto
+        z-index: 200
+        .main-menu
+            +flex(row, center, center)
+            width: auto
+            &-item
+                margin-top: $margin-none
+                width: auto
+                margin-right: 30px
+    .content
+        width: 100%
+        margin: $margin-none

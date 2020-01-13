@@ -1,0 +1,22 @@
+.footer
+    background-color: #493382
+    padding: 60px 50px
+    color: rgba(255, 255, 255, 0.2)
+    font-size: 0.9em
+    &-info
+        +flex(row, flex-start, flex-start)
+        &-item 
+            padding: 0px 20px
+            &:first-child
+                padding-left: 0px
+            &:nth-child(-n+2) 
+                border-right: 1px solid rgba(255, 255, 255, 0.2)
+            & a 
+                color: inherit
+                display: inline-block
+                border-bottom: 2px dotted rgba(255, 255, 255, 0.2)
+                line-height: 1.2em
+                cursor: pointer
+                &:hover
+                    border-bottom: none
+                    color: $color-title

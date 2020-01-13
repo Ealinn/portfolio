@@ -1,0 +1,30 @@
+.intro-block
+    +flex(column, center, flex-start)
+    padding-left: 50px
+    height: 100vh
+    background-attachment: fixed
+    background-image: url(../image/intro.png)
+    background-position: top right
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: #5e42a6
+    h1 
+        margin: $margin-none
+        color: $color-title
+        font-size: 3.3em
+    p 
+        margin-top: 40px
+        margin-bottom: 65px
+        color: $color-main
+        width: 70%
+        line-height: $line-height
+        font-size: 1.3em
+        a 
+            color: inherit
+            display: inline-block
+            border-bottom: 2px dotted $color-main
+            line-height: 1.2em
+            cursor: pointer
+            &:hover
+                border-bottom: none
+                color: $color-title
