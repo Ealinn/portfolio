@@ -1,0 +1,36 @@
+.services 
+	+flex(column, start, center)
+	background-color: $white
+	&__inner
+		width: 100%
+		+flex(row, space-between, start)
+		flex-wrap: wrap
+	&__item
+		width: 350px
+		+flex(column, start, center)
+		&-title
+			margin: 30px 0
+			font-family: 'Montserrat-Regular', sans-serif
+			font-weight: 400
+			font-style: normal
+			font-display: swap
+		&-text
+			text-align: center
+			line-height: 1.7
+		&-icon
+			width: 92px
+			height: 92px
+
+.typography-icon
+	background-image: url("../images/services/typography.svg")
+.code-icon
+	background-image: url("../images/services/code.svg")
+.support-icon
+	background-image: url("../images/services/support.svg")
+
+.typography-icon:hover
+	background-image: url("../images/services/typography-hover.svg")
+.code-icon:hover
+	background-image: url("../images/services/code-hover.svg")
+.support-icon:hover
+	background-image: url("../images/services/support-hover.svg")

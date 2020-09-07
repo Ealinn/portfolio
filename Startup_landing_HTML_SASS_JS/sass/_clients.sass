@@ -1,0 +1,62 @@
+.clients
+	+flex(column, center, center)
+	min-width: 0
+	background-color: $section-bg
+	overflow: hidden
+	position: relative
+	width: 100%
+	&__logos
+		+flex(row, center, center)
+		// padding: 0px 120px
+		margin-bottom: 70px
+		& img
+			margin-right: 60px
+			&:last-child
+				margin-right: 0
+	&__content
+		+flex(column, center, center)
+		min-width: 0
+		text-align: center
+		padding-bottom: 60px
+		width: 100%
+	&__item
+		width: 100%
+		padding: 0px 190px
+		cursor: pointer
+	&__text
+		font-size: 18px
+		line-height: 1.7
+		font-style: italic
+		margin-bottom: 30px
+	&__author
+		font-size: 20px
+		line-height: 1.5
+
+	&__content .slick-dots
+		+flex(row, center, center)
+		bottom: 0
+
+	&__content .slick-dots li
+		list-style: none
+		margin: 0 2px
+
+	&__content .slick-dots li.slick-active button
+		background-color: $red
+
+	&__content .slick-dots button
+		font-size: 0
+		background-color: #dddddd
+		width: 13px
+		height: 13px
+		border-radius: 50%
+		cursor: pointer
+		&::before
+			font-size: 0
+
+	&__content .slick-list
+		overflow: hidden
+		max-width: calc(1140px + 15px * 2)
+
+	&__content.slick-dotted.slick-slider
+		margin-bottom: 0
+

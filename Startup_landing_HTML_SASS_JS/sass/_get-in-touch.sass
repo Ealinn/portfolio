@@ -1,0 +1,34 @@
+.no-webp .contacts-link
+	background-image: url("../images/get-in-touch/get-in-touch-bg.jpg")
+
+.webp .contacts-link
+	background-image: url("../images/get-in-touch/get-in-touch-bg-opt.webp")
+
+.contacts-link
+	min-height: 369px
+	position: relative
+	&__inner
+		+flex(column, center, center)
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 2
+		background-color: rgba(192, 48, 28, 0.6)
+		font-family: 'RobotoSlab-Regular'
+		font-style: normal
+		font-weight: 400
+		font-display: swap
+		color: $white
+		text-align: center
+		padding: 100px 0px
+	&__title
+		margin-bottom: 50px
+		font-size: 30px
+		line-height: 1.46
+		span
+			text-transform: uppercase
+	&__btn
+		padding: 15px 25px
+		font-size: 18px

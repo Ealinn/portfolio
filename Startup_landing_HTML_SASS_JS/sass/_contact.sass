@@ -1,0 +1,47 @@
+.contact
+	+flex(column, flex-start, center)
+	background-color: $white
+	&__inner
+		+flex(row, space-between, flex-start)
+		width: 100%
+	&-info
+		+flex(column, flex-start, flex-start)
+		width: 36%
+		&__item
+			padding-left: 27px
+			&:not(:last-child)
+				margin-bottom: 30px
+		&__title
+			position: relative
+			font-family: 'Montserrat-Regular'
+			font-weight: 400
+			font-style: normal
+			font-display: swap
+			font-size: $main-font
+			line-height: 2.14
+			text-transform: uppercase
+			&::before
+				content: ""
+				position: absolute
+				left: -27px
+				top: 50%
+				transform: translateY(-50%)
+				width: 20px
+				height: 20px
+				background-repeat: no-repeat
+			&--addr::before
+				background-image: url("../images/map-marker.svg")
+			&--phone::before
+				background-image: url("../images/phone.svg")
+			&--email::before
+				top: 62%
+				background-image: url("../images/envelope.svg")
+		&__links
+			max-width: 160px
+		&__address, &__link
+			font-size: $footer-text
+			line-height: 1.67
+	&__form
+		width: 64%
+		max-width: 730px
+		

@@ -1,0 +1,56 @@
+*, *::after, *::before
+	box-sizing: border-box
+body
+	font-family: 'RobotoSlab-Regular', sans-serif
+	font-style: normal
+	font-weight: 400
+	font-display: swap
+	font-size: $main-font
+	color: $main-color
+a
+	color: inherit
+	text-decoration: none
+ul 
+	padding: 0
+.container
+	max-width: calc(1140px + 15px * 2)
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+.btn
+	color: $white
+	border: 2px solid $white
+	text-transform: uppercase
+	line-height: 1
+	&:hover
+		background-color: $white
+		color: $red
+.section
+	padding-top: 100px
+	padding-bottom: 100px
+	&__title
+		font-family: 'Montserrat-Regular', sans-serif
+		font-weight: 400
+		font-style: normal
+		font-display: swap
+		font-size: $section-title
+		position: relative
+		height: 48px
+		padding-bottom: 30px
+		text-transform: uppercase
+		&::after
+			content: ""
+			width: 50px
+			height: 2px
+			position: absolute
+			top: 46px
+			left: 50%
+			transform: translateX(-50%)
+			background-color: $main-color
+	&__subtitle
+		font-family: 'RobotoSlab-Regular', sans-serif
+		font-style: normal
+		font-weight: 400
+		font-display: swap
+		font-size: $section-subtitle
+		margin: 30px 0 70px 0

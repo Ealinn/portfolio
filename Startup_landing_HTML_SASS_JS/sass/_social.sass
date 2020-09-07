@@ -1,0 +1,30 @@
+.social
+	+flex(row, center, center)
+	&__item
+		+flex(row, center, center)
+		width: 28px
+		height: 28px
+		margin-right: 2px
+		background-color: transparent
+		&:hover
+			background-color: $red
+		
+	&__icon
+		display: block
+		height: 13px
+		fill: $white
+		&-footer
+			height: 16px
+	
+	&__item-footer
+		width: 40px
+		height: 40px
+		border: 2px solid $white
+		border-radius: 50%
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+		&:hover
+			background-color: $white
+		&:hover .social__icon-footer
+			fill: $red

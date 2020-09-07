@@ -1,0 +1,34 @@
+.slick-track
+	display: flex
+
+.slick-slide
+	outline: none
+
+.slick-btn 
+	+flex(column, center, center)
+	width: 37px
+	height: 40px
+	position: absolute
+	top: 34%
+	// transform: translateY(-50%)
+	z-index: 5
+	cursor: pointer
+	background-color: #8b8b8b
+	border: none
+	outline: none
+	&:hover
+		background-color: $red
+
+.slick-btn img
+	width: 14px
+	height: 19px
+
+.slick-prev 
+	left: 0
+	&::before
+		content: ""
+
+.slick-next 
+	right: 0
+	&::before
+		content: ""
