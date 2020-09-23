@@ -65,35 +65,21 @@
 						Startup
 					</div>
 					<!-- /.header__logo -->
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#intro">Home</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#services">Services</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#about">About</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#works">Works</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#blog">Blog</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#clients">Clients</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__list-link" data-scroll="#contact">Contact</a>
-							</li>
-						</ul>
-						<!-- /.menu__list -->
+					<nav id="menu" class="menu">
+						<a href="#" class="menu__link" data-scroll="#intro">Home</a>
+						<a href="#" class="menu__link" data-scroll="#services">Services</a>
+						<a href="#" class="menu__link" data-scroll="#about">About</a>
+						<a href="#" class="menu__link" data-scroll="#works">Works</a>
+						<a href="#" class="menu__link" data-scroll="#blog">Blog</a>
+						<a href="#" class="menu__link" data-scroll="#clients">Clients</a>
+						<a href="#" class="menu__link" data-scroll="#contact">Contact</a>
 					</nav>
 					<!-- /.menu -->
+					<button id="menu-toggle" class="menu-button" type="button">
+						<span class="menu-button__line"></span>
+					</button>
 				</div>
-				<!-- /.header__top -->
+				<!-- /.header__inner -->
       </div>
       <!-- /.container -->
     </header>
@@ -174,11 +160,11 @@
           <!-- /.about__text -->
           <p class="about__text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam
-            nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed
-            diam voluptua. At vero eos eaccusam et justo dolores et ea rebum.
+            nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed
+            diam voluptua. At vero eos et accusam et justo dolores et ea rebum.
             Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum
-            dolor sit amet. Lorem ipsum dolor et.
+            dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem
+            ipsum dolor sit amet. Lorem ipsum eat.
           </p>
           <!-- /.about__text -->
           <div class="team">
@@ -697,16 +683,16 @@
 
     <!-- Clients -->
     <div id="clients" class="clients section">
-      <div class="clients__logos">
-        <img src="images/client_logos/deorham.png" alt="" />
-        <img src="images/client_logos/ratings.png" alt="" />
-        <img src="images/client_logos/malik-media.png" alt="" />
-        <img src="images/client_logos/bcause.png" alt="" />
-        <img src="images/client_logos/wompify.png" alt="" />
-      </div>
-      <!-- /.clients__logos -->
+			<div class="container-clients">
+				<div class="clients__logos">
+					<img src="images/client_logos/deorham.png" alt="" />
+					<img src="images/client_logos/ratings.png" alt="" />
+					<img src="images/client_logos/malik-media.png" alt="" />
+					<img src="images/client_logos/bcause.png" alt="" />
+					<img src="images/client_logos/wompify.png" alt="" />
+				</div>
+				<!-- /.clients__logos -->
 
-      <div class="container">
         <div class="clients__content">
           <div class="clients__item">
             <p class="clients__text">
@@ -739,7 +725,7 @@
         </div>
         <!-- /.clients__content -->
       </div>
-      <!-- /.container -->
+      <!-- /.container-clients -->
     </div>
     <!-- /.clients -->
 

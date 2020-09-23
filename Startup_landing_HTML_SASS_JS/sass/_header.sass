@@ -7,7 +7,7 @@
 	color: white
 	&.fixed
 		position: fixed
-		background-color: rgba(192, 48, 28, 0.9)
+		background-color: rgba(110, 25, 14, 0.9)
 	&__inner
 		width: 100%
 		+flex(row, space-between, center)
@@ -20,18 +20,18 @@
 		font-family: 'Montserrat-Bold', sans-serif
 		font-weight: 700
 		font-style: normal
-		font-display: swap
 		font-size: 24px
 		line-height: 1.5
 
-.menu__list
-	+flex(row, space-between, center)
+.menu
+	display: flex
 	font-family: 'Montserrat-Regular', sans-serif
 	font-weight: 400
 	font-style: normal
-	font-display: swap
-	&-item
+	&__link
 		position: relative
+		display: inline-block
+		margin-left: 33px
 		&::after
 			display: block
 			content: ""
@@ -45,5 +45,34 @@
 			transition: transform 0.2s ease-in-out
 		&:hover::after
 			transform: scale(1)
-		&:not(:last-child)
-			margin-right: 33px
+		&:first-child
+			margin-left: 0
+
+.menu-button
+	padding: 10px 2px
+	display: none
+	border: none
+	background: none
+	outline: none
+	cursor: pointer
+	&__line
+		position: relative
+		display: block
+		width: 30px
+		height: 4px
+		border-radius: 20px
+		background-color: white
+		&::before, 
+		&::after
+			content: ""
+			position: absolute
+			left: 0
+			z-index: 1
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: white
+		&::before
+			top: -8px
+		&::after
+			top: 8px

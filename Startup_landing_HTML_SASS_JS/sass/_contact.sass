@@ -3,6 +3,7 @@
 	background-color: $white
 	&__inner
 		+flex(row, space-between, flex-start)
+		flex-wrap: wrap
 		width: 100%
 	&-info
 		+flex(column, flex-start, flex-start)
@@ -16,7 +17,6 @@
 			font-family: 'Montserrat-Regular'
 			font-weight: 400
 			font-style: normal
-			font-display: swap
 			font-size: $main-font
 			line-height: 2.14
 			text-transform: uppercase
@@ -39,9 +39,9 @@
 		&__links
 			max-width: 160px
 		&__address, &__link
+			display: inline-block
 			font-size: $footer-text
 			line-height: 1.67
 	&__form
 		width: 64%
 		max-width: 730px
-		

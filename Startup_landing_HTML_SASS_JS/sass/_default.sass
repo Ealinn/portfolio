@@ -1,10 +1,10 @@
 *, *::after, *::before
 	box-sizing: border-box
 body
+	position: relative
 	font-family: 'RobotoSlab-Regular', sans-serif
 	font-style: normal
 	font-weight: 400
-	font-display: swap
 	font-size: $main-font
 	color: $main-color
 a
@@ -32,10 +32,8 @@ ul
 		font-family: 'Montserrat-Regular', sans-serif
 		font-weight: 400
 		font-style: normal
-		font-display: swap
 		font-size: $section-title
 		position: relative
-		height: 48px
 		padding-bottom: 30px
 		text-transform: uppercase
 		&::after
@@ -43,7 +41,7 @@ ul
 			width: 50px
 			height: 2px
 			position: absolute
-			top: 46px
+			bottom: 0
 			left: 50%
 			transform: translateX(-50%)
 			background-color: $main-color
@@ -51,6 +49,6 @@ ul
 		font-family: 'RobotoSlab-Regular', sans-serif
 		font-style: normal
 		font-weight: 400
-		font-display: swap
 		font-size: $section-subtitle
-		margin: 30px 0 70px 0
+		margin: 30px 10px 70px 10px
+		text-align: center

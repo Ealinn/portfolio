@@ -1,3 +1,8 @@
+.container-clients
+	max-width: calc(900px + 15px * 2)
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
 .clients
 	+flex(column, center, center)
 	min-width: 0
@@ -7,12 +12,13 @@
 	width: 100%
 	&__logos
 		+flex(row, center, center)
-		// padding: 0px 120px
-		margin-bottom: 70px
+		flex-wrap: wrap
+		width: 100%
+		margin-bottom: 50px
 		& img
-			margin-right: 60px
-			&:last-child
-				margin-right: 0
+			margin-right: 15px
+			margin-bottom: 20px
+			margin-left: 15px
 	&__content
 		+flex(column, center, center)
 		min-width: 0
@@ -21,13 +27,15 @@
 		width: 100%
 	&__item
 		width: 100%
-		padding: 0px 190px
 		cursor: pointer
 	&__text
 		font-size: 18px
 		line-height: 1.7
 		font-style: italic
+		margin-right: 20px
 		margin-bottom: 30px
+		margin-left: 20px
+		text-align: center
 	&__author
 		font-size: 20px
 		line-height: 1.5
@@ -55,6 +63,7 @@
 
 	&__content .slick-list
 		overflow: hidden
+		width: 100%
 		max-width: calc(1140px + 15px * 2)
 
 	&__content.slick-dotted.slick-slider

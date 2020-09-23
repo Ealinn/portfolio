@@ -8,21 +8,15 @@
 	&__text
 		font-size: $main-font
 		line-height: 1.7
-		width: 50%
-	&__text + &__text
-		padding-left: 20px
+		width: 48%
+		text-align: center
 	.team
 		margin-top: 70px
-		+flex(row, space-between, center)
 		width: 100%
-		min-width: 0
 		position: relative
 	.team__item
-		// width: 25%
-		width: 263px
 		+flex(column, start, center)
 		text-align: center
-		margin-right: 30px
 		&:last-child
 			margin-right: 0
 		&:hover .team__item-content
@@ -34,6 +28,8 @@
 		&-img
 			position: absolute
 			top: 0
+			right: 0
+			bottom: 0
 			left: 0
 			z-index: 1
 		&-content
@@ -54,7 +50,6 @@
 			font-family: 'Montserrat-Regular'
 			font-weight: 400
 			font-style: normal
-			font-display: swap
 			font-size: $main-font
 			line-height: 1.7
 			text-transform: uppercase
