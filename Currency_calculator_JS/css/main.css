@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+.container {
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F0FFF0;
+  font-size: 20px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form__select,
+.form__currency-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #FAFAD2;
+  outline: none;
+  font-size: inherit;
+}
+
+.radios_wrapper {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.radios_wrapper input[type="radio"] {
+  display: none;
+}
+.radios_wrapper [type="radio"]:checked+label,
+.radios_wrapper [type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  line-height: 22px;
+  display: inline-block;
+}
+.radios_wrapper [type="radio"]:checked+label:before,
+.radios_wrapper [type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #F0FFF0;
+}
+.radios_wrapper [type="radio"]:checked+label:before {
+  border: 2px solid #DEB887;
+}
+.radios_wrapper [type="radio"]:not(:checked)+label:before {
+  border: 2px solid gray;
+}
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #DEB887;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 100%;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.form__send {
+  padding: 10px 15px;
+  border: 1px solid #DEB887;
+  border-radius: 10px;
+  background-color: #F5DEB3;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.form-result {
+  padding: 10px 15px;
+  width: 250px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+}
