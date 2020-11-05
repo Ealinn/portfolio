@@ -5,46 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Counters</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .square {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width: 150px;
-            height: 150px;
-            border: 1px solid black;
-            padding: 10px;
-            margin: 10px;
-            background-color: #926CD7;
-            color: aliceblue;
-            font-size: 2em;
-        }
-        .button {
-            outline: none;
-            width: 30px;
-            height: 30px;
-            padding: 5px;
-            color: black;
-            font-weight: bold;
-            margin: 5px;
-            cursor: pointer;
-            text-align: center;
-            border: 1px solid grey;
-            border-radius: 3px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
@@ -85,19 +46,6 @@
         </div>
     </div>
 
-    <script>
-        var $square = document.querySelectorAll('.square');
-        $square.forEach(function (item) {
-            var $buttonPlus = item.querySelector('.button-plus');
-            var $buttonMinus = item.querySelector('.button-minus');
-            var $counter = item.querySelector('.counter');
-            $buttonPlus.addEventListener("click", function () {
-                $counter.textContent++;
-            });
-            $buttonMinus.addEventListener("click", function () {
-                $counter.textContent--;
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
