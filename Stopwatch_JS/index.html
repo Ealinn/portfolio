@@ -4,55 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
-    <style>
-        html, body {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-        .container-stopwatch,
-        .stopwatch-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 300px;
-        }
-        #stopwatch {
-            font-size: 4em;
-            padding: 50px 100px;
-            border: 2px solid #7B68EE;
-            border-radius: 100px;
-        }
-        .button-stopwatch {
-            outline: none;
-            width: 200px;
-            padding: 12px;
-            border-radius: 5px;
-            color: black;
-            font-weight: bold;
-            font-size: 1.5em;
-            margin: 15px 0px;
-            cursor: pointer;
-        }
-        .green {
-            background-color: #00FF00;
-            border: 1px solid #008000;
-        }
-        .red {
-            background-color: #FF0000;
-            border: 1px solid #800000;
-        }
-        .gray {
-            background-color: #A9A9A9;
-            border: 1px solid #696969;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container-stopwatch">
@@ -64,37 +16,6 @@
         </form>   
     </div>    
 
-    <script>
-        var sec = 0;
-        var timerSetInt;
-        var stopwatchText = document.getElementById("stopwatch").childNodes[0];
-        var startActive = false;
-
-        var buttonStart = document.querySelector('.start');
-
-        buttonStart.addEventListener('click', function () {
-            if (startActive === false) {
-                timerSetInt = setInterval(function () {
-                    sec++;
-                    stopwatchText.nodeValue = sec;
-                }, 1000); 
-                startActive = true;
-            };
-        });
-
-        var buttonStop = document.querySelector('.stop');
-        buttonStop.addEventListener('click', function () {
-            clearInterval(timerSetInt);
-            startActive = false;
-        });
-
-        var buttonClear = document.querySelector('.clear');
-        buttonClear.addEventListener('click', function () {
-            clearInterval(timerSetInt);
-            sec = 0;
-            stopwatchText.nodeValue = sec;
-            startActive = false;
-        });       
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
