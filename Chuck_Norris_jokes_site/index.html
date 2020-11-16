@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/93e4662bed.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chuck Norris Jokes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <p class="logo">msi 2020</p>
+        <h1 class="content-title">Hey!</h1>
+        <h2 class="content-subtitle">Let’s try to find a joke for you:</h2>
+        <form action="" class="content-form">
+          <input type="radio" name="jokes" id="random" checked />
+          <label for="random">Random</label><br />
+          <input type="radio" name="jokes" id="categories" />
+          <label for="categories">From caterogies</label><br />
+          <div class="categories-wrapper hide-categories"></div>
+          <input type="radio" name="jokes" id="search" />
+          <label for="search">Search</label><br />
+          <input
+            class="search-input hide-search-input"
+            type="search"
+            name=""
+            id="jokes-search"
+            placeholder="Free text search..."
+          />
+          <button class="content-form__submit" type="submit">Get a joke</button>
+        </form>
+        <!-- /.content-form -->
+        <div class="content-joke-wrapper"></div>
+        <!-- /.content-joke-wrapper -->
+      </div>
+      <!-- /.content-wrapper -->
+      <div class="favourites-wrapper">
+        <h2 class="favourites-title">Favourite</h2>
+        <div class="favourites-joke-wrapper"></div>
+        <!-- /.favourites-joke-wrapper -->
+      </div>
+      <!-- /.favourites-wrapper -->
+      <button class="favourites-menu-btn"></button>
+      <h2 class="favourites-menu-title">Favourite</h2>
+    </div>
+    <!-- /.container -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
