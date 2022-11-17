@@ -1,0 +1,30 @@
+{
+  "name": "react_todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear": "npm i && npm run dev",
+    "dev": "./node_modules/.bin/webpack-dev-server",
+    "prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack-cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "cross-env": "^7.0.2",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
